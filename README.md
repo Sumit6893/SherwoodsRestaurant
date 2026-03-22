@@ -77,8 +77,8 @@ This project was built as part of learning and practicing:
 **Sumit Kumar Das**
 
 * 📧 Email: [sumitkd49@gmail.com](mailto:sumitkd49@gmail.com)
-* 🔗 LinkedIn: (Add your link)
-* 💻 LeetCode: (Add your link)
+* 🔗 LinkedIn: (https://www.linkedin.com/in/sumitkd49/)
+* 💻 LeetCode: (https://leetcode.com/u/Sumitdas987/)
 
 ---
 
