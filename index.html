@@ -1,64 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sherwoods Restaurant</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sherwoods Restaurant</title>
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
+    <!-- Navbar -->
+    <header id="navbar">
+      <img src="images/logo.png" alt="Sherwoods Logo" class="logo" />
 
-<!-- Navbar -->
-<header id="navbar">
-    <img src="images/logo.png" alt="Sherwoods Logo" class="logo">
-    <nav>
+      <!-- Hamburger -->
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+      <nav id="navLinks">
         <a href="#home">Home</a>
         <a href="#menu">Menu</a>
         <a href="#contact">Contact</a>
         <a href="https://wa.me/919244291400" class="nav-btn">Order Now</a>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<!-- Hero -->
-<section id="home" class="hero">
-    <img src="images/logo.png" class="hero-logo">
-    <h2>Luxury Dining Experience</h2>
-    <p>Multi Cuisine Restaurant & Bar</p>
-    <a href="https://wa.me/919244291400" class="btn">Order Now</a>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <img src="images/logo.png" class="hero-logo" />
+      <h2>Luxury Dining Experience</h2>
+      <p>Multi Cuisine Restaurant & Bar</p>
+      <a href="https://wa.me/919244291400" class="btn">Order Now</a>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+  <h2 class="title">Our Menu</h2>
+
+  <!-- Search -->
+  <input type="text" id="search" placeholder="Search food..." />
+
+  <!-- Category -->
+  <div class="categories">
+    <button onclick="filterCategory('all')">All</button>
+    <button onclick="filterCategory('soup')">Soup</button>
+    <button onclick="filterCategory('appetizer')">Appetizer</button>
+    <button onclick="filterCategory('main-course')">Main Course</button>
+  </div>
+
+  <!-- Subcategory -->
+  <div class="categories">
+    <button onclick="filterSubCategory('all')">All Type</button>
+    <button onclick="filterSubCategory('indian-veg')">Indian Veg</button>
+    <button onclick="filterSubCategory('indian-nonveg')">Indian Non-Veg</button>
+    <button onclick="filterSubCategory('asian-nonveg')">Asian</button>
+    <button onclick="filterSubCategory('continental-nonveg')">Continental</button>
+  </div>
+
+  <!-- Cards -->
+  <div class="menu-container" id="menuContainer"></div>
 </section>
 
-<!-- Menu Section -->
-<section id="menu">
-    <h2 class="title">Our Menu</h2>
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="title">Contact</h2>
+      <p>📍 Bhopal, MP</p>
+      <p>📞 09244291400</p>
 
-    <!-- Search -->
-    <input type="text" id="search" placeholder="Search food...">
+      <iframe
+        src="https://www.google.com/maps?q=Sherwoods+Bhopal&output=embed"
+      ></iframe>
+    </section>
+    <footer>
+      <p>© 2026 Sherwoods Restaurant | All Rights Reserved</p>
+    </footer>
 
-    <!-- Filters -->
-    <div class="filters">
-        <button onclick="filterMenu('all')">All</button>
-        <button onclick="filterMenu('veg')">Veg</button>
-        <button onclick="filterMenu('nonveg')">Non-Veg</button>
-    </div>
-
-    <!-- Menu Cards -->
-    <div class="menu-container" id="menuContainer"></div>
-</section>
-
-<!-- Contact -->
-<section id="contact">
-    <h2 class="title">Contact</h2>
-    <p>📍 Bhopal, MP</p>
-    <p>📞 09244291400</p>
-
-    <iframe src="https://www.google.com/maps?q=Sherwoods+Bhopal&output=embed"></iframe>
-</section>
-<footer>
-    <p>© 2026 Sherwoods Restaurant | All Rights Reserved</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

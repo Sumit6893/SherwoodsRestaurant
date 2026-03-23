@@ -1,0 +1,51 @@
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+        gap: 10px;
+    }
+
+    header nav {
+        margin-left: 0;
+    }
+
+    header nav a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    /* Hero */
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    /* Search */
+    #search {
+        width: 90%;
+    }
+
+    /* Cards */
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        height: auto;
+    }
+
+    .card img {
+        height: 150px;
+    }
+}
+@media (max-width: 480px) {
+    .menu-container {
+        grid-template-columns: 1fr; /* ek hi card per row */
+    }
+}

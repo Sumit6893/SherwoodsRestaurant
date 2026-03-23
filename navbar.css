@@ -1,0 +1,40 @@
+/* Hamburger hidden by default */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+nav {
+    transition: 0.3s ease;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+        color: white;
+    }
+
+    nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: black;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    nav a {
+        display: block;
+        margin: 15px 0;
+        font-size: 18px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+}
