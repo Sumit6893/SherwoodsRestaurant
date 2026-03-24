@@ -300,7 +300,7 @@ const menu = [
 ];
 
 const container = document.getElementById("menuContainer");
-const searchInput = document.getElementById("search");
+
 
 function displayMenu(items) {
   container.innerHTML = "";
@@ -352,6 +352,7 @@ function filterSubCategory(subcat) {
 }
 
 // Search
+const searchInput = document.getElementById("search");
 searchInput.addEventListener("input", () => {
   const value = searchInput.value.toLowerCase();
   const filtered = menu.filter((item) =>
